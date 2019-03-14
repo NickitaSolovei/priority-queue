@@ -182,6 +182,7 @@ describe('Node', () => {
 
 			left.swapWithParent();
 
+			
 			expect(left.right).to.equal(right);
 			expect(left.left).to.equal(root);
 			expect(root.left).to.equal(childOfLeft);
