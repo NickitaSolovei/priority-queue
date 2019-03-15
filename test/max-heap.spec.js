@@ -154,7 +154,14 @@ describe('MaxHeap', () => {
 
 		it('shifts node up until heap property is valid', () => {
 			const newRoot = h.root.left.left;
+
 			h.shiftNodeUp(h.root.left.left);
+
+			//
+			/*console.log(h.root);
+			console.log(h.root.left);
+			console.log(h.root.left.left);*/
+
 			expect(h.root).to.equal(newRoot);
 		});
 
